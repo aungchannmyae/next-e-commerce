@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 
 
 
-const page = async ({searchParams}) => {
+const Page = async ({searchParams}) => {
   const searchParamObject = await searchParams;
   const currentQueryString = searchQueryToQueryString(searchParamObject);
   console.log(searchParamObject)
@@ -29,4 +29,4 @@ const page = async ({searchParams}) => {
   );
 };
 
-export default page;
+export default Page;

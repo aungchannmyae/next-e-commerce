@@ -1,6 +1,6 @@
 // import CartSection from "@/features/cart/components/CartSection";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       Cart Page
@@ -9,4 +9,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

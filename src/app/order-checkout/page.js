@@ -1,6 +1,6 @@
 import CheckoutSection from "@/features/orderCheckout/components/CheckoutSection";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <CheckoutSection />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

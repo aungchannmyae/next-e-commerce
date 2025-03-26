@@ -1,6 +1,6 @@
 import OrderConfirmation from "@/features/orderConfirm/components/OrderConfirmation";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <OrderConfirmation />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

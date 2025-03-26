@@ -1,6 +1,6 @@
 // import WishlistSection from "@/features/wishlist/components/WishlistSection";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       {/* <WishlistSection /> */}
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
