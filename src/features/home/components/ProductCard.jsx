@@ -1,10 +1,8 @@
-import useCartStore from "@/stores/useCartStore";
 import Link from "next/link";
 import React from "react";
 import { BiSolidCategory } from "react-icons/bi";
 
 const ProductCard = ({ product }) => {
-  // const { cart, addToCart } = useCartStore();
 
   return (
     <div className=" overflow-hidden bg-white border border-gray-200 rounded-xl shadow-l  hover:scale-105 duration-300 active:border-2 active:border-purple-700">

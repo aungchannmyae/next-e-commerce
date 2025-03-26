@@ -1,19 +1,19 @@
-"use client";
-import React, { useState } from "react";
+// "use client";
+// import React, { useState } from "react";
 
-const useCart = () => {
-  // Load cart from local storage
-  const getCartFromStorage = () => {
-    if (typeof window !== "undefined") {
-      const storedCart = localStorage.getItem("cart");
-      return storedCart ? JSON.parse(storedCart) : [];
-    }
-    return [];
-  };
+// const useCart = () => {
+//   // Load cart from local storage
+//   const getCartFromStorage = () => {
+//     if (typeof window !== "undefined") {
+//       const storedCart = localStorage.getItem("cart");
+//       return storedCart ? JSON.parse(storedCart) : [];
+//     }
+//     return [];
+//   };
 
-  return {
-    getCartFromStorage,
-  };
-};
+//   return {
+//     getCartFromStorage,
+//   };
+// };
 
-export default useCart;
+// export default useCart;

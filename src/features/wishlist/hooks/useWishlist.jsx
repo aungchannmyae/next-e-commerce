@@ -1,21 +1,21 @@
-"use client"
-import React, { useState } from "react";
+// "use client"
+// import React, { useState } from "react";
 
-const useWishlist = () => {
-  // Load wishlist from local storage
-  const getWishlistFromStorage = () => {
-    if (typeof window !== "undefined") {
-      const storedWishlist = localStorage.getItem("wishlist");
-      return storedWishlist ? JSON.parse(storedWishlist) : [];
-    }
-    return [];
-  };
+// const useWishlist = () => {
+//   // Load wishlist from local storage
+//   const getWishlistFromStorage = () => {
+//     if (typeof window !== "undefined") {
+//       const storedWishlist = localStorage.getItem("wishlist");
+//       return storedWishlist ? JSON.parse(storedWishlist) : [];
+//     }
+//     return [];
+//   };
 
-  return {
+//   return {
 
-    getWishlistFromStorage,
+//     getWishlistFromStorage,
 
-  };
-};
+//   };
+// };
 
-export default useWishlist;
+// export default useWishlist;

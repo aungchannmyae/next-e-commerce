@@ -1,4 +1,3 @@
-"use client"
 import Breadcrumb from "@/components/Breadcrumb";
 import Container from "@/components/Container";
 import Link from "next/link";
