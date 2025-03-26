@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Products | Next E-commerce',
+  description: 'Browse our collection of products - Next E-commerce',
+};
+
 import ProductCategory from "@/features/home/components/ProductCategory";
 import ProductSection from "@/features/home/components/ProductSection";
 import { searchQueryToQueryString } from "@/utils/url";
