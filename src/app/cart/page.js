@@ -1,9 +1,10 @@
-import CartSection from "@/features/cart/components/CartSection";
+// import CartSection from "@/features/cart/components/CartSection";
 
 const page = () => {
   return (
     <>
-      <CartSection />
+      Cart Page
+      {/* <CartSection /> */}
     </>
   );
 };
