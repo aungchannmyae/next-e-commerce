@@ -1,9 +1,14 @@
-import useWishlist from "@/features/wishlist/hooks/useWishlist";
 import { toast } from "react-toastify";
 import { create } from "zustand";
 
 
-const { getWishlistFromStorage } = useWishlist();
+const getWishlistFromStorage = () => {
+  if (typeof window !== "undefined") {
+    const storedWishlist = localStorage.getItem("wishlist");
+    return storedWishlist ? JSON.parse(storedWishlist) : [];
+  }
+  return [];
+};
 
 const useWishlistStore = create((set, get) => ({
   wishlist: getWishlistFromStorage(),

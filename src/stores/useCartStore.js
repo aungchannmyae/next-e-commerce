@@ -1,4 +1,3 @@
-import useCart from "@/features/cart/hooks/useCart";
 import { toast } from "react-toastify";
 import { create } from "zustand";
 
@@ -11,7 +10,6 @@ const getCartFromStorage = () => {
   return [];
 };
 
-// const { getCartFromStorage } = useCart();
 
 const useCartStore = create((set, get) => ({
   cart: getCartFromStorage(),

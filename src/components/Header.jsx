@@ -114,7 +114,7 @@ const Header = () => {
           {/* Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button className={`  hover:scale-105 duration-300 text-sm text-gray-900 border-2 border-purple-300 active:border-purple-500 active:ring-purple-500 focus-visible:border-purple-500 focus-visible:ring-purple-500 focus-visible:ring-1 focus-visible:outline-none bg-purple-50`} variant="outline">Profile</Button>
+              <Button className={`  active:scale-105 duration-300 text-sm text-gray-900 border-2 border-purple-300 active:border-purple-500 active:ring-purple-500 focus-visible:border-purple-500 focus-visible:ring-purple-500 focus-visible:ring-1 focus-visible:outline-none bg-purple-50`} variant="outline">Profile</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 bg-purple-50">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
