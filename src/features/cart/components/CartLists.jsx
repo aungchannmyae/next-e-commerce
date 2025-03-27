@@ -3,7 +3,6 @@ import React from "react";
 import useProducts from "@/features/home/hooks/useProducts";
 import useCartStore from "@/stores/useCartStore";
 import Link from "next/link";
-import React from "react";
 import { toast } from "react-toastify";
 
 const CartLists = () => {

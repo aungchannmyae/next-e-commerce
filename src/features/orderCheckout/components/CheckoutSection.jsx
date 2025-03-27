@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
-import React, { Suspense } from "react";
+import React from "react";
 import OrderSummary from "@/components/OrderSummary";
 const checkoutSection = () => {
   return (
@@ -16,7 +16,7 @@ const checkoutSection = () => {
           ]}
         />
       </Container>
-      <Suspense fallback={<p>Loading...</p>}>
+
         <section className=" pb-8 antialiased dark:bg-gray-900 md:pb-16">
           <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
             <div className="">
@@ -319,7 +319,7 @@ const checkoutSection = () => {
             </div>
           </div>
         </section>
-      </Suspense>
+
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
     </>

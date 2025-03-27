@@ -6,16 +6,14 @@ export const metadata = {
 import ProductCategory from "@/features/home/components/ProductCategory";
 import ProductSection from "@/features/home/components/ProductSection";
 import { searchQueryToQueryString } from "@/utils/url";
-import React, { Suspense } from "react";
+import React from "react";
 
 
 
 const Page = async ({searchParams}) => {
   const searchParamObject = await searchParams;
   const currentQueryString = searchQueryToQueryString(searchParamObject);
-  console.log(searchParamObject)
-  console.log(currentQueryString)
-
+  // console.log(searchParamObject)
   // console.log(currentQueryString)
 
   const res = await fetch(

@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { debounce } from "lodash";
 import { BiCross } from "react-icons/bi";

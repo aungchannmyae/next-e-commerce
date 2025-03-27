@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { BiSolidCategory } from "react-icons/bi";
 import useWishlistStore from "@/stores/useWishlistStore";
