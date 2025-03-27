@@ -1,22 +1,21 @@
-// 'use client'
-// import React, { useState } from "react";
-// import useSWR from "swr";
+"use client";
+import React, { useState } from "react";
+import useSWR from "swr";
 
-// const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
-// const useCategories = () => {
-//   const [fetchUrl, setFetchUrl] = useState(
-//     "https://api.escuelajs.co/api/v1/categories"
-//   );
+const useCategories = () => {
+  const { data, error, isLoading } = useSWR(
+    `${process.env.NEXT_PUBLIC_API_URL}/categories`,
+    fetcher
+  );
+  // console.log(data);
 
-//   const { data, error, isLoading } = useSWR(fetchUrl, fetcher);
-//   // console.log(data);
+  return {
+    data,
+    error,
+    isLoading,
+  };
+};
 
-//   return {
-//     data,
-//     error,
-//     isLoading
-//   };
-// };
-
-// export default useCategories;
+export default useCategories;

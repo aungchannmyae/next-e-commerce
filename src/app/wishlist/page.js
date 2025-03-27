@@ -1,9 +1,9 @@
-// import WishlistSection from "@/features/wishlist/components/WishlistSection";
+import WishlistSection from "@/features/wishlist/components/WishlistSection";
 
 const Page = () => {
   return (
     <>
-      {/* <WishlistSection /> */}
+      <WishlistSection />
     </>
   );
 };
