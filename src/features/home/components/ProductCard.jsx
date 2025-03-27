@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className=" overflow-hidden bg-white border border-gray-200 rounded-xl shadow-l  hover:scale-105 duration-300 active:border-2 active:border-purple-700">
-      <Link href={`/products/${product.id}`}>
+      <Link href={`/products/${product.slug}`}>
         <div className=" p-5">
           {product.images ? (
             <img

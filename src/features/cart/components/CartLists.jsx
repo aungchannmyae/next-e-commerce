@@ -25,9 +25,17 @@ const CartLists = () => {
       {isLoading ? (
         <p>loading...</p>
       ) : cart.length === 0 ? (
-        <p className=" my-5 w-full flex justify-center items-center font-semibold text-xl text-gray-900 lg:max-w-2xl xl:max-w-4xl">
-          There is No Item In your Cart.
-        </p>
+        <div className=" my-5 w-full flex justify-center items-center font-semibold text-xl text-gray-900 lg:max-w-2xl xl:max-w-4xl">
+          <span className=" flex-col justify-center items-center">
+            <p className=" f">There is No Item In your Cart.</p>
+            <Link
+              href="/products"
+              className=" my-2 flex justify-center text-sm text-purple-500 hover:no-underline underline"
+            >
+              Start your Shopping.
+            </Link>
+          </span>
+        </div>
       ) : (
         cart?.map((item) => {
           const productExist = data?.find((product) => product.id === item.id);
@@ -157,7 +165,7 @@ const CartLists = () => {
 
                     <div className="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
                       <Link
-                        href={`/products/${item.id}`}
+                        href={`/products/${item.slug}`}
                         className="text-base line-clamp-2 font-medium text-gray-900 hover:underline dark:text-white"
                       >
                         {item.title}
